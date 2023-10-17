@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculator.css">
+    <title>Document</title>
+</head>
+<body bgcolor="#a5e1e1">
+    <div class="h2">
+    <h2> SIMPLE CALCULATOR</h2>
+    </div>
+    <div class="container">
+        <div class="calculator">
+            <form>
+                <div class="display">
+                    <input type="text" name="display">
+                </div>
+                <div>
+                    <input class='operator' type="text" value="AC" onclick="display.value =''" >
+                    <input class='operator' type="text" value="Del" onclick="display.value=display.value.toString().slice(0,-1)">
+                    <input class='operator' type="text" value="%" onclick="display.value +='%'">
+                    <input class='operator' type="text" value="/" onclick="display.value +='/'">
+                </div>
+                <div>
+                    <input type="text" value="7"onclick="display.value +='7'">
+                    <input type="text" value="8"onclick="display.value +='8'">
+                    <input type="text" value="9"onclick="display.value +='9'">
+                    <input class='operator' type="text" value="*"onclick="display.value +='*'">
+                </div>
+                <div>
+                    <input type="text" value="4" onclick="display.value +='4'">
+                    <input type="text" value="5" onclick="display.value +='5'">
+                    <input type="text" value="6" onclick="display.value +='6'">
+                    <input class='operator' type="text" value="-" onclick="display.value +='-'">
+                </div>
+                <div>
+                    <input type="text" value="1" onclick="display.value +='1'">
+                    <input type="text" value="2" onclick="display.value +='2'">
+                    <input type="text" value="3" onclick="display.value +='3'">
+                    <input class='operator' type="text" value="+" onclick="display.value +='+'">
+                </div>
+                <div>
+                    <input type="text" value="00" onclick="display.value +='00'">
+                    <input type="text" value="0" onclick="display.value +='0'">
+                    <input type="text" value="." onclick="display.value +='.'">
+                    <input class='operator' type="text" value="=" onclick="display.value=eval(display.value)" >
+                    
+                </div>
+            </form>
+        </div>
+    </div>
+</body> 
+</html>
